@@ -420,33 +420,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="card">
-                    <h4 class="card-header" id="parallel-exp">Hyperparameter Tuning</h4>
-                    <div class="card-body">
-                        <ul>
-                            {{ range (where .Pages "File.Dir" "in" "/featurestore/ml/Parallel_Experiments/Maggy/").ByTitle }}
-                            <li>
-                                <a href="{{.Permalink}}">{{.Title}}</a>
-                            </li>
-                            {{ end }}
-                            {{ range (where .Pages "File.Dir" "in" "/featurestore/ml/Parallel_Experiments/PyTorch/").ByTitle }}
-                            <li>
-                                <a href="{{.Permalink}}">{{.Title}}</a>
-                            </li>
-                            {{ end }}
-                            {{ range (where .Pages "File.Dir" "in" "/featurestore/ml/Parallel_Experiments/TensorFlow/").ByTitle }}
-                            <li>
-                                <a href="{{.Permalink}}">{{.Title}}</a>
-                            </li>
-                            {{ end }}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
@@ -501,6 +474,43 @@
             </div>
         </div>
 
+        <div class="row" id="maggy-title">
+            <div class="col-sm-12">
+                <h3 class="category_header">Maggy - Distributed Transparent ML</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <h4 class="card-header" id="maggy">Maggy - Distributed Transparent ML </h4>
+                    <div class="card-body">
+                        <ul>
+                            {{ range (where .Pages "File.Dir" "in" "/featurestore/ml/Maggy/Hopsworks/").ByTitle }}
+                            <li>
+                                <a href="{{.Permalink}}">{{.Title}}</a>
+                            </li>
+                            {{ end }}
+                            {{ range (where .Pages "File.Dir" "in" "/featurestore/ml/Maggy/Hopsworks/ImageNet").ByTitle }}
+                            <li>
+                                <a href="{{.Permalink}}">{{.Title}}</a>
+                            </li>
+                            {{ end }}
+                            {{ range (where .Pages "File.Dir" "in" "/featurestore/ml/Maggy/Databricks/").ByTitle }}
+                            <li>
+                                <a href="{{.Permalink}}">{{.Title}}</a>
+                            </li>
+                            {{ end }}
+                            {{ range (where .Pages "File.Dir" "in" "/featurestore/ml/Maggy/Spark/").ByTitle }}
+                            <li>
+                                <a href="{{.Permalink}}">{{.Title}}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="row" id="miscellaneous">
             <div class="col-sm-12">
